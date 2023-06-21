@@ -30,6 +30,15 @@ SSL рукопожатие
 - (Клиент)Шифрование с помощью публичного ключа сгенерированного публичного ключа
 - (Сервер) Расшифровка сгенерированного ключа и его использование для обмена данными
 
+Генерирование ключей SSH
+- устанавливаем OpenSSH сервер (Ubuntu): sudo apt-get install openssh-server
+- генерируем ключ: ssh-keygen -t rsa
+- получаем файлы:
+  - /home/user/.ssh/id_rsa
+  - /home/user/.ssh/id_rsa.pub
+- записываем публичный ключ: cat /home/user/.ssh/id_rsa.pub >> /home/user/.ssh/authorized_keys
+- пробуем подключиться с использованием ключа: ssh -i /home/user/.ssh/id_rsa localhost
+
 **SSL Сертификаты**
 
 Цепочка доверия
