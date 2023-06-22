@@ -227,6 +227,14 @@ root@netology2:~# tcpdump -nn -i eth1 # (вариант 2)
 - Multicast - Пример: ff00::/8
 - Специальные адреса - Пример: ::1/128,::/128,...
 
+**Структура глобального IPv6 адреса**
+
+![global1](https://github.com/joos-network/osi7-ipv6-troubleshooting/blob/main/global62.png)
+![global2](https://github.com/joos-network/osi7-ipv6-troubleshooting/blob/main/global61.png)
+
+**Структура локального IPv6 адреса**
+![local1](https://github.com/joos-network/osi7-ipv6-troubleshooting/blob/main/local6.png)
+
 Векторы атак
 - сканирование подсети может затянуться на годы, но вместо сканирования атака может быть произведена на Neighbor Discovery;
 - порты на IPv6 должны защищаться так же как в IPv4, либо же стоит отключить их;
